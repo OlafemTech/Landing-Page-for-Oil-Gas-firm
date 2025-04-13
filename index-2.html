@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      PrimeFlow Energy - Powering Progress Through Energy Innovation
+    </title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#0f4c81", secondary: "#d4af37" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Inter', sans-serif;
+      }
+      .hero-section {
+          background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7)), url('https://public.readdy.ai/ai/img_res/4808172afc989ca14addb4c25663d832.jpg');
+          background-size: cover;
+          background-position: center;
+      }
+      .service-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+      .project-card:hover .project-overlay {
+          opacity: 1;
+      }
+      .stats-item {
+          position: relative;
+      }
+      .stats-item:not(:last-child):after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 20%;
+          height: 60%;
+          width: 1px;
+          background-color: rgba(209, 213, 219, 0.5);
+      }
+      .partner-section {
+          background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7)), url('https://public.readdy.ai/ai/img_res/d49d200906781bdc85bab2c59e82a0b3.jpg');
+          background-size: cover;
+          background-position: center;
+      }
+      .careers-section {
+          background-image: linear-gradient(to right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('https://public.readdy.ai/ai/img_res/e14f20eb18b81becfa610c0cbe68156d.jpg');
+          background-size: cover;
+          background-position: center;
+      }
+      input:focus, textarea:focus {
+          outline: none;
+          border-color: #0f4c81;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-['Pacifico'] text-primary"
+          >PrimeFlow</a
+        >
+
+        <div class="hidden md:flex space-x-8 items-center">
+          <a
+            href="#about"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >Services</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >Projects</a
+          >
+          <a
+            href="#compliance"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >Compliance</a
+          >
+          <a
+            href="#careers"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >Careers</a
+          >
+          <a
+            href="#contact"
+            class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
+            >Contact Us</a
+          >
+        </div>
+
+        <div class="md:hidden w-10 h-10 flex items-center justify-center">
+          <i class="ri-menu-line ri-xl"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center pt-20">
+      <div class="container mx-auto px-6 py-16 w-full">
+        <div class="max-w-3xl">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+          >
+            Powering Progress Through Energy Innovation
+          </h1>
+          <p class="text-xl text-gray-200 mb-8">
+            Delivering sustainable energy solutions with global expertise and
+            local impact. Trusted by industry leaders in over 30 countries.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all font-medium whitespace-nowrap"
+            >
+              Partner With Us
+            </button>
+            <button
+              class="bg-white text-primary px-8 py-3 !rounded-button hover:bg-gray-100 transition-all font-medium whitespace-nowrap"
+            >
+              Request Consultation
+            </button>
+          </div>
+        </div>
+
+        <!-- Stats Panel -->
+        <div class="bg-white rounded-lg shadow-xl mt-16 py-8 px-6 max-w-5xl">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="stats-item text-center">
+              <h3 class="text-4xl font-bold text-primary mb-2">25+</h3>
+              <p class="text-gray-600">Years of Experience</p>
+            </div>
+            <div class="stats-item text-center">
+              <h3 class="text-4xl font-bold text-primary mb-2">350+</h3>
+              <p class="text-gray-600">Projects Completed</p>
+            </div>
+            <div class="stats-item text-center">
+              <h3 class="text-4xl font-bold text-primary mb-2">30+</h3>
+              <p class="text-gray-600">Countries Served</p>
+            </div>
+            <div class="stats-item text-center">
+              <h3 class="text-4xl font-bold text-primary mb-2">5,000+</h3>
+              <p class="text-gray-600">Employees Worldwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold mb-6">
+              Global Energy Solutions
+              <span class="text-primary">Since 2000</span>
+            </h2>
+            <p class="text-gray-700 mb-6">
+              PrimeFlow Energy is a dynamic energy company at the forefront of
+              petroleum exploration, gas distribution, and offshore services.
+              With operations spanning six continents, we deliver innovative
+              energy solutions that meet the world's growing demands while
+              maintaining the highest standards of safety and environmental
+              responsibility.
+            </p>
+            <p class="text-gray-700 mb-8">
+              Our team of industry-leading experts combines decades of
+              experience with cutting-edge technology to optimize energy
+              production and distribution systems for our clients, ranging from
+              government agencies to multinational corporations.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
+              >
+                Our Leadership
+              </button>
+              <button
+                class="border border-primary text-primary px-6 py-2 !rounded-button hover:bg-gray-50 transition-all whitespace-nowrap"
+              >
+                Company History
+              </button>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="https://public.readdy.ai/ai/img_res/1eaf15f6dc7c2c3730656868c66d0b13.jpg"
+              alt="PrimeFlow Energy Headquarters"
+              class="rounded-lg shadow-xl w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">
+            Our Comprehensive <span class="text-primary">Energy Services</span>
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Delivering end-to-end solutions across the energy value chain with
+            uncompromising quality and safety standards.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg p-8 transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-oil-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Exploration & Production</h3>
+            <p class="text-gray-600 mb-6">
+              Advanced geological surveys, drilling operations, and production
+              management for onshore and offshore oil and gas fields.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <div class="w-5 h-5 flex items-center justify-center ml-2">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg p-8 transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-gas-station-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Gas Distribution</h3>
+            <p class="text-gray-600 mb-6">
+              Comprehensive natural gas transportation, storage, and
+              distribution networks with state-of-the-art monitoring systems.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <div class="w-5 h-5 flex items-center justify-center ml-2">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg p-8 transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-lightbulb-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Energy Consulting</h3>
+            <p class="text-gray-600 mb-6">
+              Strategic advisory services for energy optimization, regulatory
+              compliance, and sustainable energy transition planning.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <div class="w-5 h-5 flex items-center justify-center ml-2">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg p-8 transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-refund-2-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Downstream Operations</h3>
+            <p class="text-gray-600 mb-6">
+              Refining, processing, and marketing of petroleum products with
+              integrated supply chain management solutions.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <div class="w-5 h-5 flex items-center justify-center ml-2">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">
+            Featured <span class="text-primary">Projects</span>
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Showcasing our expertise through successful energy infrastructure
+            developments around the world.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="project-card bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/c449e2da645b13031914537edb2318a2.jpg"
+                alt="North Sea Offshore Platform"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div
+                class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <button
+                  class="bg-white text-primary px-6 py-2 !rounded-button hover:bg-gray-100 transition-all font-medium whitespace-nowrap"
+                >
+                  View Case Study
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                North Sea Offshore Platform
+              </h3>
+              <div class="flex items-center text-gray-600 mb-3">
+                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span>North Sea, Norway</span>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Development of a state-of-the-art offshore platform with
+                advanced safety systems and optimized production capabilities.
+              </p>
+              <div class="flex items-center text-primary font-medium">
+                <span>Completed in 2023</span>
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-check-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="project-card bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/7e4bc0bc6091b8ae97e03a3095fd761b.jpg"
+                alt="Trans-Continental Pipeline"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div
+                class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <button
+                  class="bg-white text-primary px-6 py-2 !rounded-button hover:bg-gray-100 transition-all font-medium whitespace-nowrap"
+                >
+                  View Case Study
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Trans-Continental Pipeline
+              </h3>
+              <div class="flex items-center text-gray-600 mb-3">
+                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span>Central Asia to Europe</span>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Construction of a 3,000km natural gas pipeline with advanced
+                monitoring systems and minimal environmental impact.
+              </p>
+              <div class="flex items-center text-primary font-medium">
+                <span>Completed in 2022</span>
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-check-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="project-card bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/693931ae1e074eae9bf01aeff795bc76.jpg"
+                alt="Gulf Coast Refinery Expansion"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div
+                class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300"
+              >
+                <button
+                  class="bg-white text-primary px-6 py-2 !rounded-button hover:bg-gray-100 transition-all font-medium whitespace-nowrap"
+                >
+                  View Case Study
+                </button>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Gulf Coast Refinery Expansion
+              </h3>
+              <div class="flex items-center text-gray-600 mb-3">
+                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span>Texas, United States</span>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Modernization and capacity expansion of a major refinery,
+                implementing cutting-edge emissions reduction technology.
+              </p>
+              <div class="flex items-center text-primary font-medium">
+                <span>Completed in 2024</span>
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-check-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <button
+            class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all font-medium whitespace-nowrap"
+          >
+            View All Projects
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance Section -->
+    <section id="compliance" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">
+            Safety & <span class="text-primary">Compliance</span>
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Our unwavering commitment to the highest standards of safety,
+            environmental protection, and regulatory compliance.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+              <h3 class="text-2xl font-semibold mb-6">
+                Industry-Leading Safety Standards
+              </h3>
+              <p class="text-gray-700 mb-6">
+                At PrimeFlow Energy, safety is not just a priority—it's a core
+                value embedded in every aspect of our operations. Our
+                comprehensive safety management system exceeds industry
+                requirements and has resulted in our exemplary safety record.
+              </p>
+              <p class="text-gray-700 mb-8">
+                We maintain rigorous training programs, regular safety audits,
+                and a culture where every employee is empowered to prioritize
+                safety above all else.
+              </p>
+              <button
+                class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
+              >
+                Download Safety Report
+              </button>
+            </div>
+            <div class="md:w-1/2">
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div
+                  class="flex flex-col items-center p-4 border border-gray-200 rounded-lg"
+                >
+                  <div class="w-16 h-16 flex items-center justify-center mb-3">
+                    <i class="ri-shield-check-line ri-2x text-primary"></i>
+                  </div>
+                  <p class="text-center font-medium">ISO 14001 Certified</p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 border border-gray-200 rounded-lg"
+                >
+                  <div class="w-16 h-16 flex items-center justify-center mb-3">
+                    <i class="ri-shield-check-line ri-2x text-primary"></i>
+                  </div>
+                  <p class="text-center font-medium">ISO 45001 Certified</p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 border border-gray-200 rounded-lg"
+                >
+                  <div class="w-16 h-16 flex items-center justify-center mb-3">
+                    <i class="ri-shield-check-line ri-2x text-primary"></i>
+                  </div>
+                  <p class="text-center font-medium">API Q1 Certified</p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 border border-gray-200 rounded-lg"
+                >
+                  <div class="w-16 h-16 flex items-center justify-center mb-3">
+                    <i class="ri-shield-check-line ri-2x text-primary"></i>
+                  </div>
+                  <p class="text-center font-medium">NNPC Approved</p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 border border-gray-200 rounded-lg"
+                >
+                  <div class="w-16 h-16 flex items-center justify-center mb-3">
+                    <i class="ri-shield-check-line ri-2x text-primary"></i>
+                  </div>
+                  <p class="text-center font-medium">NUPRC Certified</p>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 border border-gray-200 rounded-lg"
+                >
+                  <div class="w-16 h-16 flex items-center justify-center mb-3">
+                    <i class="ri-shield-check-line ri-2x text-primary"></i>
+                  </div>
+                  <p class="text-center font-medium">IOGP Member</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <div
+              class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="ri-earth-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              Environmental Stewardship
+            </h3>
+            <p class="text-gray-600">
+              Our comprehensive environmental management system ensures minimal
+              ecological impact across all operations, with continuous
+              monitoring and improvement.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <div
+              class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="ri-government-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Regulatory Compliance</h3>
+            <p class="text-gray-600">
+              We maintain strict adherence to all local and international
+              regulations, with dedicated compliance teams for each operational
+              region.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <div
+              class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="ri-community-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Community Engagement</h3>
+            <p class="text-gray-600">
+              Our operations prioritize positive community impact through local
+              employment, infrastructure development, and educational
+              initiatives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">
+            What Our <span class="text-primary">Clients Say</span>
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Trusted by industry leaders and government agencies worldwide.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="text-primary">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-6">
+              "PrimeFlow Energy's expertise in offshore operations transformed
+              our production capabilities. Their attention to safety and
+              environmental standards while maintaining efficiency is unmatched
+              in the industry."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="ri-user-3-line ri-lg text-gray-500"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Richard Thompson</h4>
+                <p class="text-gray-600 text-sm">
+                  Operations Director, GulfStream Energy
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="text-primary">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-6">
+              "The consulting team at PrimeFlow provided invaluable insights
+              that helped us navigate complex regulatory changes while
+              optimizing our distribution network. Their strategic guidance has
+              been instrumental to our growth."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="ri-user-3-line ri-lg text-gray-500"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Elena Vasquez</h4>
+                <p class="text-gray-600 text-sm">CEO, EuroGas Distribution</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="text-primary">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-6">
+              "As a government agency, we needed a partner with impeccable
+              credentials and a proven track record. PrimeFlow Energy exceeded
+              our expectations in the development of our national energy
+              infrastructure."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="ri-user-3-line ri-lg text-gray-500"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Dr. Ahmed Okafor</h4>
+                <p class="text-gray-600 text-sm">
+                  Director, National Energy Commission
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partnership Section -->
+    <section class="partner-section py-20 text-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold mb-6">
+              Partner With PrimeFlow Energy
+            </h2>
+            <p class="mb-6">
+              Join forces with a global leader in energy solutions. Our
+              collaborative approach ensures mutually beneficial partnerships
+              that drive innovation and sustainable growth.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div class="flex items-start">
+                <div
+                  class="w-10 h-10 flex items-center justify-center mr-4 mt-1"
+                >
+                  <i class="ri-check-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Technical Excellence</h4>
+                  <p class="text-gray-200">
+                    Access to industry-leading expertise and proprietary
+                    technologies
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-10 h-10 flex items-center justify-center mr-4 mt-1"
+                >
+                  <i class="ri-check-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Global Network</h4>
+                  <p class="text-gray-200">
+                    Leverage our established presence in key energy markets
+                    worldwide
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-10 h-10 flex items-center justify-center mr-4 mt-1"
+                >
+                  <i class="ri-check-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Risk Mitigation</h4>
+                  <p class="text-gray-200">
+                    Proven systems for managing operational and financial risks
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-10 h-10 flex items-center justify-center mr-4 mt-1"
+                >
+                  <i class="ri-check-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Sustainable Practices</h4>
+                  <p class="text-gray-200">
+                    Forward-thinking approaches to environmental stewardship
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="text-4xl font-bold">150+</div>
+              <p>Active strategic partnerships across 6 continents</p>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="bg-white rounded-lg shadow-xl p-8 text-gray-800">
+              <h3 class="text-2xl font-semibold mb-6">
+                Request Partnership Information
+              </h3>
+              <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label for="company" class="block text-gray-700 mb-2"
+                      >Company Name</label
+                    >
+                    <input
+                      type="text"
+                      id="company"
+                      class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                    />
+                  </div>
+                  <div>
+                    <label for="name" class="block text-gray-700 mb-2"
+                      >Contact Person</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                    />
+                  </div>
+                  <div>
+                    <label for="email" class="block text-gray-700 mb-2"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                    />
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-gray-700 mb-2"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-6">
+                  <label for="interest" class="block text-gray-700 mb-2"
+                    >Area of Interest</label
+                  >
+                  <div class="relative">
+                    <select
+                      id="interest"
+                      class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary appearance-none pr-8"
+                    >
+                      <option value="" selected disabled>
+                        Select an option
+                      </option>
+                      <option value="exploration">
+                        Exploration & Production
+                      </option>
+                      <option value="distribution">Gas Distribution</option>
+                      <option value="consulting">Energy Consulting</option>
+                      <option value="downstream">Downstream Operations</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <div
+                      class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none w-5 h-5 flex items-center justify-center"
+                    >
+                      <i class="ri-arrow-down-s-line text-gray-500"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-6">
+                  <label for="message" class="block text-gray-700 mb-2"
+                    >Additional Information</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all font-medium whitespace-nowrap w-full"
+                >
+                  Submit Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Careers Section -->
+    <section id="careers" class="careers-section py-20 text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Join Our Global Team</h2>
+        <p class="max-w-3xl mx-auto mb-12">
+          Build your career with an industry leader committed to innovation,
+          professional development, and creating positive global impact.
+        </p>
+
+        <div
+          class="bg-white text-gray-800 rounded-lg shadow-xl p-8 max-w-4xl mx-auto"
+        >
+          <h3 class="text-2xl font-semibold mb-6">Current Opportunities</h3>
+
+          <div class="overflow-hidden mb-8">
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left font-medium text-gray-600 mb-4 px-4"
+            >
+              <div>Position</div>
+              <div>Location</div>
+              <div>Department</div>
+            </div>
+
+            <div class="space-y-4">
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gray-50 p-4 rounded text-left hover:bg-gray-100 transition-colors"
+              >
+                <div class="font-semibold">Senior Petroleum Engineer</div>
+                <div>Houston, TX</div>
+                <div class="flex justify-between items-center">
+                  <span>Exploration</span>
+                  <button class="text-primary font-medium whitespace-nowrap">
+                    Apply
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gray-50 p-4 rounded text-left hover:bg-gray-100 transition-colors"
+              >
+                <div class="font-semibold">
+                  Environmental Compliance Manager
+                </div>
+                <div>Aberdeen, UK</div>
+                <div class="flex justify-between items-center">
+                  <span>HSE</span>
+                  <button class="text-primary font-medium whitespace-nowrap">
+                    Apply
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gray-50 p-4 rounded text-left hover:bg-gray-100 transition-colors"
+              >
+                <div class="font-semibold">Project Finance Analyst</div>
+                <div>Dubai, UAE</div>
+                <div class="flex justify-between items-center">
+                  <span>Finance</span>
+                  <button class="text-primary font-medium whitespace-nowrap">
+                    Apply
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gray-50 p-4 rounded text-left hover:bg-gray-100 transition-colors"
+              >
+                <div class="font-semibold">Distribution Network Specialist</div>
+                <div>Singapore</div>
+                <div class="flex justify-between items-center">
+                  <span>Operations</span>
+                  <button class="text-primary font-medium whitespace-nowrap">
+                    Apply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+              <div
+                class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="ri-user-add-line ri-xl text-primary"></i>
+              </div>
+              <div class="text-left">
+                <h4 class="font-semibold">Don't see the right fit?</h4>
+                <p class="text-gray-600">
+                  Submit your resume for future opportunities
+                </p>
+              </div>
+            </div>
+            <button
+              class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
+            >
+              View All Positions
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">
+            Get In <span class="text-primary">Touch</span>
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Contact our team for inquiries about our services, partnership
+            opportunities, or career information.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2">
+            <div class="bg-white rounded-lg shadow-lg p-8 h-full">
+              <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+
+              <div class="space-y-6 mb-8">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="ri-map-pin-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Global Headquarters</h4>
+                    <p class="text-gray-600">
+                      1200 Energy Plaza, Houston, TX 77002, United States
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="ri-phone-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Phone</h4>
+                    <p class="text-gray-600">+1 (713) 555-0123</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="ri-mail-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Email</h4>
+                    <p class="text-gray-600">info@primeflowenergy.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="font-semibold mb-4">Regional Offices</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h5 class="font-medium mb-2">Europe</h5>
+                  <p class="text-gray-600 text-sm">Aberdeen, United Kingdom</p>
+                </div>
+
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h5 class="font-medium mb-2">Middle East</h5>
+                  <p class="text-gray-600 text-sm">
+                    Dubai, United Arab Emirates
+                  </p>
+                </div>
+
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h5 class="font-medium mb-2">Asia Pacific</h5>
+                  <p class="text-gray-600 text-sm">Singapore</p>
+                </div>
+
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h5 class="font-medium mb-2">Africa</h5>
+                  <p class="text-gray-600 text-sm">Lagos, Nigeria</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+              <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+              <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label for="first-name" class="block text-gray-700 mb-2"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      id="first-name"
+                      class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="last-name" class="block text-gray-700 mb-2"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      id="last-name"
+                      class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-6">
+                  <label for="contact-email" class="block text-gray-700 mb-2"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="contact-email"
+                    class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="subject" class="block text-gray-700 mb-2"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="contact-message" class="block text-gray-700 mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="contact-message"
+                    rows="5"
+                    class="w-full px-4 py-2 rounded border border-gray-300 focus:border-primary"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all font-medium whitespace-nowrap w-full"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div>
+            <a href="#" class="text-2xl font-['Pacifico'] text-white mb-6 block"
+              >PrimeFlow</a
+            >
+            <p class="text-gray-400 mb-6">
+              A global leader in innovative energy solutions, committed to
+              safety, sustainability, and excellence in all operations.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >News & Insights</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Exploration & Production</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Gas Distribution</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Energy Consulting</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Downstream Operations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Safety & Compliance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Sustainability Initiatives</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+            <p class="text-gray-400 mb-4">
+              Subscribe to our newsletter for the latest updates and insights.
+            </p>
+            <form class="mb-6">
+              <div class="flex">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="w-full px-4 py-2 rounded-l border-none text-gray-800"
+                />
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-4 py-2 rounded-r hover:bg-opacity-90 transition-all whitespace-nowrap"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <p class="text-gray-400 text-sm">
+              By subscribing, you agree to our Privacy Policy and consent to
+              receive updates from our company.
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-gray-800 mb-8" />
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-500 text-sm mb-4 md:mb-0">
+            &copy; 2025 PrimeFlow Energy. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-500 text-sm hover:text-white transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 text-sm hover:text-white transition-colors"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 text-sm hover:text-white transition-colors"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Sticky navigation
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 50) {
+          nav.classList.add("shadow-md");
+        } else {
+          nav.classList.remove("shadow-md");
+        }
+      });
+    </script>
+  </body>
+</html>
